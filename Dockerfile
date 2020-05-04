@@ -21,7 +21,7 @@ ADD . /app
 ADD target/app.jar /app 
 CMD ["java", "-jar", "/app/app.jar"]
 
-# coping only the necessarie will be yout image smaller and take
+# coping only the required will be yout image smaller and take
 # less time to build, also coping less files reduce the chances of
 # invalidate your caching in changings
 

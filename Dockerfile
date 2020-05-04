@@ -1,6 +1,6 @@
 # ORDER MATTERS FOR CACHING
 FROM debian
-# ADD . /app
+ADD . /app
 RUN apt-get update
 RUN apt-get -y install openjdk-8-jdk ssh vim
 
@@ -17,7 +17,7 @@ FROM debian
 RUN apt-get update
 RUN apt-get -y install openjdk-8-jdk ssh vim
 
-# ADD . /app
+ADD . /app
 ADD target/app.jar /app 
 CMD ["java", "-jar", "/app/app.jar"]
 
